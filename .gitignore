@@ -1,9 +1,3 @@
-/application/scheduler/target/
-/application/admin/target/
-/application/springboot/target/
-/application/notification/target/
-/application/emailnotification/target/
-/application/businessdomain/target/
-/application/security/target/
+target/
 *.iml
 .idea/
