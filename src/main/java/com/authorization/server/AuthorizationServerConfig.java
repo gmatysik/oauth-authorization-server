@@ -24,7 +24,8 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
                 .secret(passwordEncoder().encode("noonewilleverguess"))
                 .scopes("resource:read")
                 .authorizedGrantTypes("authorization_code")
-                .redirectUris("http://localhost:9999/test","http://localhost:8089/","http://localhost:4200/login");
+                .redirectUris("http://192.168.99.100:9999/test","http://192.168.99.100:8089/",
+                        "http://192.168.99.100:4200/login", "http://192.168.99.100/login");
     }
 
     @Override

@@ -1,10 +1,12 @@
-debug: true
+server:
+  port: 8081
+#debug: true
 
-logging:
-  level:
-    org.springframework.security: DEBUG
-    org.springframework.cloud: DEBUG
-    org.springframework.web: WARN
+#logging:
+#  level:
+#    org.springframework.security: DEBUG
+#    org.springframework.cloud: DEBUG
+#    org.springframework.web: WARN
 
 security:
   oauth2:
@@ -12,8 +14,8 @@ security:
       client-id: first-client
       client-secret: noonewilleverguess
 
-spring:
-  mvc:
-    view:
-      prefix: /WEB-INF/views/
-      suffix: .jsp
+#spring:
+#  mvc:
+#    view:
+#      prefix: /WEB-INF/views/
+#      suffix: .jsp
