@@ -1,9 +1,10 @@
 server:
   port: 8081
-#debug: true
+#debug: redirectUristrue
 
-#logging:
-#  level:
+logging:
+  level:
+    ROOT: INFO
 #    org.springframework.security: DEBUG
 #    org.springframework.cloud: DEBUG
 #    org.springframework.web: WARN
@@ -13,6 +14,8 @@ security:
     client:
       client-id: first-client
       client-secret: noonewilleverguess
+
+redirectUris: http://192.168.99.100:9999/test, http://192.168.99.100:8089/, http://192.168.99.100:4200/login', ${FRONTEND_HOST:localhost}/login
 
 #spring:
 #  mvc:

@@ -1,0 +1,1 @@
+docker build -t auth_server:latest -f Dockerfile .
