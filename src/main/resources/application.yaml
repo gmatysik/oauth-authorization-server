@@ -15,7 +15,9 @@ security:
       client-id: first-client
       client-secret: noonewilleverguess
 
-redirectUris: http://192.168.99.100:9999/test, http://192.168.99.100:8089/, http://192.168.99.100:4200/login', ${FRONTEND_HOST:localhost}/login
+#redirectUris: http://192.168.99.100:9999/test, http://192.168.99.100:8089/, http://192.168.0.2:4200/login, ${FRONTEND_HOST:localhost}/login
+
+redirectUris: ${FRONTEND_HOST:http://localhost:4200}/login
 
 #spring:
 #  mvc:

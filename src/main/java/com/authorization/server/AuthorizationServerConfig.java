@@ -36,7 +36,8 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
                 //.redirectUris(env.getProperty("redirectUris"));
                 //.redirectUris("http://192.168.99.100:9999/test","http://192.168.99.100:8089/",
                   //      "http://192.168.99.100:4200/login", "http://192.168.99.100/login");
-                        .redirectUris("http://192.168.99.100/login");
+                       // .redirectUris("http://192.168.99.100/login");
+                .redirectUris(env.getProperty("redirectUris"));
         logger.info("redirectUris: __________________-" + env.getProperty("redirectUris"));
     }
 
